@@ -6,7 +6,7 @@ let animais = [
 ];
 
 let usuarios = [
-    { id: 1, nome: "João Silva", cpf: "12345678900", email: "joao@email.com", senha: "123", dataNascimento: "1990-05-10", perfil: "usuario", adocoesAno: 0, ultimaAdocao: null },
+    { id: 1, nome: "restoff", cpf: "12345678900", email: "restoff@email.com", senha: "123", dataNascimento: "1990-05-10", perfil: "usuario", adocoesAno: 0, ultimaAdocao: null },
     { id: 2, nome: "Admin", cpf: "00000000000", email: "admin@adote.com", senha: "admin123", dataNascimento: "1985-01-01", perfil: "admin", adocoesAno: 0 }
 ];
 
@@ -16,7 +16,7 @@ let solicitacoes = [];
 let usuarioLogado = null;
 
 
-// helpers
+
 function calcularIdade(dataNasc) {
     const hoje = new Date();
     const nasc = new Date(dataNasc);
@@ -35,7 +35,7 @@ function contarAdocoesNoAno(usuarioId) {
 
 
 function notificarUsuario(email, assunto, mensagem) {
-    alert(`📧 NOTIFICAÇÃO para ${email}\nAssunto: ${assunto}\nMensagem: ${mensagem}`);
+    alert(`NOTIFICAÇÃO para ${email}\nAssunto: ${assunto}\nMensagem: ${mensagem}`);
 }
 
 
@@ -43,7 +43,7 @@ function gerarRelatorioMensal() {
     const mesAtual = new Date().toLocaleString('default', { month: 'long' });
     const aprovadas = solicitacoes.filter(s => s.status === "aprovada");
     let total = aprovadas.length;
-    alert(`📊 RELATÓRIO DE ADOÇÕES - ${mesAtual}\nTotal de adoções realizadas: ${total}\nDetalhes: ${aprovadas.map(a => `ID solicitação ${a.id}`).join(', ') || 'Nenhuma adoção no período.'}`);
+    alert(`RELATÓRIO DE ADOÇÕES - ${mesAtual}\nTotal de adoções realizadas: ${total}\nDetalhes: ${aprovadas.map(a => `ID solicitação ${a.id}`).join(', ') || 'Nenhuma adoção no período.'}`);
 }
 
 
@@ -56,7 +56,7 @@ function podeAdotar(usuario) {
 }
 
 
-// renderizar animais com imagens
+//imagens
 function renderAnimais() {
     let lista = animais.filter(a => a.status === "disponivel");
     const especie = document.getElementById("filterEspecie").value;
@@ -67,14 +67,14 @@ function renderAnimais() {
     if (nomeBusca) lista = lista.filter(a => a.nome.toLowerCase().includes(nomeBusca));
     const container = document.getElementById("animaisContainer");
     if (lista.length === 0) {
-        container.innerHTML = "<p style='text-align:center;'>Nenhum animal encontrado 🐾</p>";
+        container.innerHTML = "<p style='text-align:center;'>Nenhum animal encontrado </p>";
         return;
     }
     container.innerHTML = lista.map(animal => {
         // Se tiver imagem, mostra imagem, senão mostra emoji
         const imagemHtml = animal.imagem && animal.imagem.trim() !== ""
             ? `<img src="${animal.imagem}" alt="${animal.nome}">`
-            : `<div class="emoji-placeholder">${animal.emoji || '🐾'}</div>`;
+            : `<div class="emoji-placeholder">${animal.emoji || ''}</div>`;
        
         return `
         <div class="card">
@@ -85,7 +85,7 @@ function renderAnimais() {
                 <h3>${animal.nome}</h3>
                 <p>${animal.especie === 'cão' ? '🐕 Cão' : '🐈 Gato'} • ${animal.idade} anos • Porte ${animal.porte}</p>
                 <p>Saúde: ${animal.historicoSaude}</p>
-                ${usuarioLogado && usuarioLogado.perfil === 'usuario' ? `<button class="adopt-btn" data-id="${animal.id}">🐾 Solicitar adoção</button>` : (usuarioLogado ? '' : '<button disabled style="background:#ccc">Faça login para adotar</button>')}
+                ${usuarioLogado && usuarioLogado.perfil === 'usuario' ? `<button class="adopt-btn" data-id="${animal.id}">Solicitar adoção</button>` : (usuarioLogado ? '' : '<button disabled style="background:#ccc">Faça login para adotar</button>')}
             </div>
         </div>
     `}).join('');
