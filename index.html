@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Adote um Amigo - Sistema de Adoção</title>
+    <link rel="stylesheet" href="style.css">
+
+   
+</head>
+<body>
+
+
+<!-- bolinhas flutuantes decorativas -->
+<div class="floating-bubble" style="width: 150px; height: 150px; bottom: 10%; left: -50px;"></div>
+<div class="floating-bubble" style="width: 280px; height: 280px; top: -80px; right: -100px; animation-duration: 18s;"></div>
+<div class="floating-bubble" style="width: 90px; height: 90px; bottom: 20%; right: 15%; animation-duration: 10s;"></div>
+<div class="floating-bubble" style="width: 200px; height: 200px; top: 40%; left: -70px; animation-duration: 14s;"></div>
+<div class="floating-bubble" style="width: 120px; height: 120px; bottom: 5%; left: 20%; animation-duration: 20s;"></div>
+
+
+<div class="app-container">
+    <div class="header">
+        <div class="logo">
+            <h1>🐾 Adote um Amigo</h1>
+            <p>Sistema de adoção de cães e gatos</p>
+        </div>
+        <div class="user-info" id="userStatusDisplay">🔒 Não autenticado</div>
+    </div>
+
+
+    <div class="main-grid">
+        <!-- LISTAGEM DE ANIMAIS -->
+        <div class="animals-section">
+            <div class="filters">
+                <select id="filterEspecie">
+                    <option value="">Todas espécies</option>
+                    <option value="cão">Cão</option>
+                    <option value="gato">Gato</option>
+                </select>
+                <select id="filterPorte">
+                    <option value="">Qualquer porte</option>
+                    <option value="pequeno">Pequeno</option>
+                    <option value="médio">Médio</option>
+                    <option value="grande">Grande</option>
+                </select>
+                <input type="text" id="searchNome" placeholder="Buscar por nome...">
+                <button class="search-btn" id="btnBuscar">🔍 Buscar</button>
+            </div>
+            <div id="animaisContainer" class="animal-cards">
+                <!-- cards gerados dinamicamente -->
+            </div>
+        </div>
+
+
+        <!-- PAINEL LATERAL: LOGIN / HISTÓRICO / ADMIN -->
+        <div class="side-panel">
+            <div id="authPanel">
+                <div class="auth-card">
+                    <h3>🔐 Acesso</h3>
+                    <input type="text" id="loginEmail" placeholder="E-mail">
+                    <input type="password" id="loginSenha" placeholder="Senha">
+                    <button id="btnLogin">Entrar</button>
+                    <button id="btnCadastroUsuario" style="background:#b97f54;">Cadastrar-se</button>
+                </div>
+            </div>
+
+
+            <div id="historicoPanel" style="display:none;">
+                <h3>📋 Meu histórico</h3>
+                <div id="historicoLista"></div>
+                <button id="btnSair" class="logout-btn">Sair da conta</button>
+            </div>
+
+
+            <div id="adminPanel" style="display:none;">
+                <h3>⚙️ Área Admin</h3>
+                <div id="solicitacoesPendentes"></div>
+                <hr>
+                <h4>➕ Cadastrar novo animal</h4>
+                <input type="text" id="novoAnimalNome" placeholder="Nome">
+                <select id="novoAnimalEspecie"><option value="cão">Cão</option><option value="gato">Gato</option></select>
+                <input type="number" id="novoAnimalIdade" placeholder="Idade (anos)">
+                <select id="novoAnimalPorte"><option value="pequeno">Pequeno</option><option value="médio">Médio</option><option value="grande">Grande</option></select>
+                <textarea id="novoAnimalSaude" placeholder="Histórico de saúde"></textarea>
+                <input type="text" id="novoAnimalImagem" placeholder="URL da imagem (opcional)">
+                <button id="btnCadastrarAnimal">Cadastrar animal</button>
+                <button id="btnRelatorio" style="background:#4a2a1e;">📊 Gerar relatório mensal</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
