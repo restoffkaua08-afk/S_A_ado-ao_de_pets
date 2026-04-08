@@ -10,8 +10,6 @@
 </head>
 <body>
 
-
-<!-- bolinhas flutuantes decorativas -->
 <div class="floating-bubble" style="width: 150px; height: 150px; bottom: 10%; left: -50px;"></div>
 <div class="floating-bubble" style="width: 280px; height: 280px; top: -80px; right: -100px; animation-duration: 18s;"></div>
 <div class="floating-bubble" style="width: 90px; height: 90px; bottom: 20%; right: 15%; animation-duration: 10s;"></div>
@@ -25,7 +23,7 @@
             <h1>🐾 Adote um Amigo</h1>
             <p>Sistema de adoção de cães e gatos</p>
         </div>
-        <div class="user-info" id="userStatusDisplay">🔒 Não autenticado</div>
+        <div class="user-info" id="userStatusDisplay">Não autenticado</div>
     </div>
 
 
@@ -45,7 +43,7 @@
                     <option value="grande">Grande</option>
                 </select>
                 <input type="text" id="searchNome" placeholder="Buscar por nome...">
-                <button class="search-btn" id="btnBuscar">🔍 Buscar</button>
+                <button class="search-btn" id="btnBuscar">Buscar</button>
             </div>
             <div id="animaisContainer" class="animal-cards">
                 <!-- cards gerados dinamicamente -->
@@ -53,7 +51,7 @@
         </div>
 
 
-        <!-- PAINEL LATERAL: LOGIN / HISTÓRICO / ADMIN -->
+        <!-- PAINEL LATERAL-->
         <div class="side-panel">
             <div id="authPanel">
                 <div class="auth-card">
@@ -67,17 +65,17 @@
 
 
             <div id="historicoPanel" style="display:none;">
-                <h3>📋 Meu histórico</h3>
+                <h3>Meu histórico</h3>
                 <div id="historicoLista"></div>
                 <button id="btnSair" class="logout-btn">Sair da conta</button>
             </div>
 
 
             <div id="adminPanel" style="display:none;">
-                <h3>⚙️ Área Admin</h3>
+                <h3>Área Admin</h3>
                 <div id="solicitacoesPendentes"></div>
                 <hr>
-                <h4>➕ Cadastrar novo animal</h4>
+                <h4>Cadastrar novo animal</h4>
                 <input type="text" id="novoAnimalNome" placeholder="Nome">
                 <select id="novoAnimalEspecie"><option value="cão">Cão</option><option value="gato">Gato</option></select>
                 <input type="number" id="novoAnimalIdade" placeholder="Idade (anos)">
