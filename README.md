@@ -51,9 +51,6 @@ index.html
 
 Não é necessário instalar dependências.
 
-📸 Demonstração
-
-(Adicione aqui prints do sistema em funcionamento — altamente recomendado para portfólio)
 
 🎯 Objetivo do Projeto
 Praticar lógica de programação em JavaScript puro
