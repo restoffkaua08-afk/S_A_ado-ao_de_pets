@@ -30,18 +30,31 @@ Limite de 3 adoções aprovadas por ano por usuário
 Solicitações expiram após 15 dias (cancelamento automático)
 Não é permitido adotar animais já indisponíveis
 Cancelamento permitido apenas em até 24h após solicitação
+
+
 🛠️ Tecnologias Utilizadas
 HTML5
+
 CSS3
+
 JavaScript (Vanilla JS)
+
+
+
 Manipulação de DOM
 Estruturas de dados em memória (arrays de usuários, animais e solicitações)
+
+
 📂 Estrutura do Projeto
 /
 ├── index.html
 ├── style.css
 ├── script.js
+
+
+
 ▶️ Como Executar
+
 Clone o repositório:
 git clone https://github.com/restoffkaua08-afk/S_A_ado-ao_de_pets.git
 Acesse a pasta:
