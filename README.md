@@ -2,6 +2,7 @@
 
 Sistema web para gerenciamento e simulação de adoção de animais, com autenticação de usuários, painel administrativo e regras de negócio para controle de adoções.
 
+
 📌 Sobre o Projeto
 
 O projeto simula uma plataforma de adoção de cães e gatos, permitindo que usuários visualizem animais disponíveis, façam solicitações de adoção e acompanhem seu histórico.
