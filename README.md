@@ -1,83 +1,107 @@
-🐾 Adote um Amigo — Sistema de Adoção de Pets
+# ADOTE UM AMIGO
 
-Sistema web para gerenciamento e simulação de adoção de animais, com autenticação de usuários, painel administrativo e regras de negócio para controle de adoções.
+<div align="center">
 
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:1F1308,45:B45309,100:F59E0B&text=ADOTE%20UM%20AMIGO&fontColor=FFFFFF&fontSize=42&fontAlignY=38&animation=fadeIn&desc=SIMULA%C3%87%C3%83O%20DE%20ADO%C3%87%C3%83O%20RESPONS%C3%81VEL&descAlignY=59&descSize=15" alt="ADOTE UM AMIGO"/>
 
-📌 Sobre o Projeto
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=900&color=F59E0B&center=true&vCenter=true&width=900&lines=HTML%20%E2%80%A2%20CSS%20%E2%80%A2%20JavaScript;Projeto+educacional+em+evolu%C3%A7%C3%A3o;Construindo.+Testando.+Evoluindo." alt="Stack"/>
 
-O projeto simula uma plataforma de adoção de cães e gatos, permitindo que usuários visualizem animais disponíveis, façam solicitações de adoção e acompanhem seu histórico.
+<br>
 
-O sistema também inclui uma área administrativa responsável por gerenciar solicitações, aprovar ou recusar adoções e cadastrar novos animais.
+### Simulação de adoção responsável.
 
-Foi desenvolvido com foco em prática de lógica de programação, manipulação de DOM e implementação de regras de negócio em JavaScript puro.
+<br>
 
-🚀 Funcionalidades
-👤 Usuário comum
-Visualização de animais disponíveis
-Filtro por espécie, porte e nome
-Solicitação de adoção
-Cancelamento de solicitações (com limite de tempo)
-Histórico de adoções
-🔐 Autenticação
-Login de usuário e administrador
-Controle de sessão simples em front-end
-🛠️ Administrador
-Aprovação ou recusa de solicitações
-Cadastro de novos animais
-Geração de relatório mensal de adoções
-🧠 Regras de Negócio
-Idade mínima para adoção: 18 anos
-Limite de 3 adoções aprovadas por ano por usuário
-Solicitações expiram após 15 dias (cancelamento automático)
-Não é permitido adotar animais já indisponíveis
-Cancelamento permitido apenas em até 24h após solicitação
+![Status](https://img.shields.io/badge/STATUS-EM%20EVOLUÇÃO-F59E0B?style=for-the-badge&labelColor=1F1308)
+![Type](https://img.shields.io/badge/PROJETO-PORTFÓLIO-B45309?style=for-the-badge&labelColor=1F1308)
 
+</div>
 
-🛠️ Tecnologias Utilizadas
-HTML5
+<br>
 
-CSS3
+# `> PROJECT.OVERVIEW`
 
-JavaScript (Vanilla JS)
+Adote um Amigo é uma aplicação educacional que simula o processo de adoção de animais. O projeto concentra regras de negócio e persistência temporária no navegador para praticar lógica, DOM e fluxos de usuário.
 
+<br>
 
+# `> CORE.TECH_STACK`
 
-Manipulação de DOM
-Estruturas de dados em memória (arrays de usuários, animais e solicitações)
+<div align="center">
 
+<img src="https://skillicons.dev/icons?i=html,css,js,git,github,vscode&theme=dark" alt="Tecnologias utilizadas"/>
 
-📂 Estrutura do Projeto
-/
+</div>
+
+**Stack principal:** HTML • CSS • JavaScript
+
+<br>
+
+# `> SYSTEM.FEATURES`
+
+- listagem e filtros de animais;
+- solicitação de adoção;
+- histórico e cancelamento;
+- login simulado;
+- painel administrativo;
+- cadastro de animais;
+- regras de prazo e disponibilidade;
+
+<br>
+
+# `> PROJECT.STRUCTURE`
+
+```text
+S_A_ado-ao_de_pets/
 ├── index.html
 ├── style.css
-├── script.js
+└── script.js
+```
 
+A árvore acima representa os componentes principais encontrados no repositório.
 
+<br>
 
-▶️ Como Executar
+# `> GETTING.STARTED`
 
-Clone o repositório:
-git clone https://github.com/restoffkaua08-afk/S_A_ado-ao_de_pets.git
-Acesse a pasta:
-cd S_A_ado-ao_de_pets
-Abra o arquivo:
-index.html
+1. Clone o repositório.
+2. Abra `index.html` no navegador.
+3. Nenhuma instalação é necessária.
 
-Não é necessário instalar dependências.
+<br>
 
+# `> QUALITY.ASSURANCE`
 
-🎯 Objetivo do Projeto
-Praticar lógica de programação em JavaScript puro
-Simular um sistema real com regras de negócio
-Desenvolver habilidades de front-end sem frameworks
-Criar base para evolução para sistemas full stack
-🔮 Possíveis Melhorias
-Integração com banco de dados (Firebase ou SQL)
-Sistema de autenticação real com backend
-Deploy online (Vercel / Netlify)
-Interface mais moderna com framework (React ou Vue)
-Sistema de notificações em tempo real
-👨‍💻 Autor
+Valide os fluxos principais, a responsividade, os links e o console do navegador antes de publicar alterações. Funcionalidades futuras não são apresentadas como concluídas.
 
-Kauã Restoff
-GitHub: https://github.com/restoffkaua08-afk
+<br>
+
+# `> PROJECT.ROADMAP`
+
+- [ ] criar backend e autenticação real;
+- [ ] adicionar banco de dados;
+- [ ] automatizar testes das regras;
+- [ ] melhorar acessibilidade;
+
+<br>
+
+# `> ENGINEERING.PRINCIPLES`
+
+> **Código de qualidade começa com propósito claro, estrutura compreensível e documentação honesta.**
+
+<br>
+
+# `> DEVELOPER`
+
+## Kauã Restoff
+
+[![GitHub](https://img.shields.io/badge/GitHub-restoffkaua08--afk-181717?style=for-the-badge&logo=github)](https://github.com/restoffkaua08-afk)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Kauã%20Restoff-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/kau%C3%A3-restoff-2821163a0)
+
+<div align="center">
+
+## `BUILD • TEST • EVOLVE`
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:1F1308,45:B45309,100:F59E0B" alt="Rodapé"/>
+
+</div>
